@@ -41,7 +41,7 @@ namespace :deploy do
   end
 
   task :stop do
-    run "cd #{current_path} ; killall node ; #{forever_path} stop #{current_path}/launch.js"     
+    run "cd #{current_path} ;  #{forever_path} stop #{current_path}/launch.js"     
   end
 
 end
